@@ -1,0 +1,36 @@
+Task 1:
+Arrays:
+Arrays have a quick access time O(1) but it could O(n) when trying to insert or delete messages.
+inneficient for large data sets (like message threads)
+
+Linked Lists:
+Has a high storage overhead due to pointers but offers a more robust sequential storage
+retrival of messages can be done in O(n) time since it might have to access a message at the end.
+Using a doubly linked list would fix this last issue and would be a viable data structure for a messaging application
+
+Hash Tables:
+Fast O(1) retrival due to the unique keys but are unordered so would not really work for a messaging application (at least the messaging part, it would work well for storing user data)
+
+Trees:
+O(log n) time for insertion deletion and retrival and it is a sequential data strucutre so it would work well for a message application.
+
+Task 2:
+Polling:
+simple to use but has a long latency time and ineficient use of server and client resources
+
+Long-Polling:
+More efficient than polling and it reduces latency but can still lead to incread server load if there are alot of clients
+
+Web-Sockets:
+This services is probably most ideal for this application because of is low latency real time retrival and sending of data and has a more efficient use of resourses
+
+Task 3:
+Arrays:
+efficient for deletion and insertion but slow retrival due to worst case O(n) time 
+
+hash tables:
+quick access using unique keys but harder to orginize since it is unordered
+
+Trees:
+efficient access and maintains order but is more complex 
+
